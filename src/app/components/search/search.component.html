@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
+<form (ngSubmit)="onSubmit()">
+  <label for="searchTerm">Término de búsqueda</label>
+  <input [(ngModel)]="searchTerm" class="u-full-width" type="text" id="searchTerm" name="searchTerm">
+  <button type="submit">Search</button>
+</form>
