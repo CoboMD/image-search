@@ -1,0 +1,18 @@
+<mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar  class="header-image">
+        <img [src]="info.imgInfo.user.profile_image.small" > 
+      </div>
+      <mat-card-title>{{info.imgInfo.user.name}}</mat-card-title>
+      <mat-card-subtitle>{{info.imgInfo.user.location}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="info.imgInfo.urls.regular" class="imgZoomed">
+    <mat-card-content>
+      <h3>
+        {{info.imgInfo.description}}
+      </h3>
+      <h3>
+        {{info.imgInfo.alt_description}}
+      </h3>
+    </mat-card-content>
+  </mat-card>

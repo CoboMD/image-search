@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  accessKey: "pvuj1kcpjr3me9whyXwpGs_6TiNRGFgvsHtFM1VhEzI",
-  apiUrl: 'https://api.unsplash.com/photos/search?'
+  accessKey: "client_id=pvuj1kcpjr3me9whyXwpGs_6TiNRGFgvsHtFM1VhEzI",
+  apiUrl: 'https://api.unsplash.com/search/photos?'
 };
 
 /*

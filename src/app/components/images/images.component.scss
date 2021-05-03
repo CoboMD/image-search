@@ -1,0 +1,33 @@
+.galery{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: max-content;
+    width: 100%;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-bestween;
+
+    
+}
+.imageUnit{    
+    width: 370px;
+	height: 300px;
+    object-fit: none;
+
+ }
+.paginator{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+h1{
+    font-size: 4em;
+    margin-top: 50px;
+}

@@ -1,3 +1,14 @@
-<p>
-  images works!
-</p>
+<div class="galery">
+  <div *ngFor="let item of arrayImages" >
+    <img [src]="item.urls.small" class="imageUnit" (click)="zoom(item)" >
+  </div>
+</div>
+<h1 *ngIf="!resultOk">¿What are you looking for?</h1>
+<mat-paginator *ngIf="resultOk"
+                class="paginator" 
+                #paginator
+                [length]="length" 
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions" 
+                (page)="handlePaginator($event)">
+</mat-paginator>

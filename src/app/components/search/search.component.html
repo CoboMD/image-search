@@ -1,8 +1,9 @@
-<mat-toolbar>
-  <span>My Application</span>
-</mat-toolbar>
-<form (ngSubmit)="onSubmit()">
-  <label for="searchTerm">Término de búsqueda</label>
-  <input [(ngModel)]="searchTerm" class="u-full-width" type="text" id="searchTerm" name="searchTerm">
-  <button type="submit">Search</button>
-</form>
+<div class="header">
+    <mat-form-field appearance="outline" class="matForm">
+
+      <input matInput autocomplete="off" #box (keyup.enter)="onEnter(box.value)" maxlength="22" >
+      <mat-icon matSuffix (click)="onEnter(box.value)" class="iconSearch" >search</mat-icon>
+
+    </mat-form-field>
+    <p>{{value}}</p>
+  </div>
